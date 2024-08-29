@@ -1,0 +1,131 @@
+@import "global";
+@import "mixin";
+
+
+#header{
+  background: #FFFFFF;
+  padding: 15px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  .header{
+    @include center();
+    &__nav a{
+      margin: 0 15px;
+      color: #000000;
+    }
+  }
+}
+
+
+
+#hero{
+  .hero{
+    @include center ();
+    margin: 60px 0 0 0;
+    &__title{
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+      width: 450px;
+    }
+    &__subtitle{
+      font-size: 16px;
+      line-height: 24px;
+      color: #666666;
+      margin: 27px 0;
+    }
+    &__reta{
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+  }
+}
+
+
+#about{
+  .about{
+    &__title{
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999999;
+      margin: 7px 0 0 0;
+    }
+    &__subtitle{
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #000000;
+      width: 400px;
+      margin: 15px 0;
+    }
+    &__photo h3{
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    &__photo{
+      margin: 20px 0;
+    }
+    &__block{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 60px 0 0 0;
+    }
+    &__btn{
+      height: 54px;
+      background: #FFFFFF;
+      border: 1px solid #000000;
+      border-radius: 0px;
+    }
+  }
+}
+
+
+#house{
+  margin: 80px 0 0 0;
+  .house{
+    &__title{
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999999;
+      margin: 10px 0 0 0;
+    }
+    &__blocks{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 0 40px 0;
+    }
+    &__subtitle{
+      font-size: 19px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #000000;
+      width: 330px;
+      margin: 10px 0;
+    }
+    &__block h3{
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    &__block{
+      margin: 20px 0;
+    }
+    &__btn{
+      background: #FFFFFF;
+      border: 1px solid #000000;
+      width: 180px;
+      height: 40px;
+    }
+  }
+}
+
+
+#frame{
+}

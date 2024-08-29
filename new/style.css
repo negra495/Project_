@@ -1,0 +1,30 @@
+.item{
+    position: relative;
+    width: 83.5px;
+    height: 82px;
+    background: black;
+    transition: 0.1s;
+    border-radius: 50px;
+    /*border: yellow 1px solid;*/
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.root{
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.item:hover{
+
+    z-index: 10;
+}

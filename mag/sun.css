@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+.container{
+    margin: 10px;
+    margin-left: 90px;
+}

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+#header {
+  background: #FFFFFF;
+  padding: 15px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header__nav a {
+  margin: 0 15px;
+  color: #000000;
+}
+
+#hero .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 0 0;
+}
+#hero .hero__title {
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 450px;
+}
+#hero .hero__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin: 27px 0;
+}
+#hero .hero__reta {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#about .about__title {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  margin: 7px 0 0 0;
+}
+#about .about__subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 400px;
+  margin: 15px 0;
+}
+#about .about__photo h3 {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+#about .about__photo {
+  margin: 20px 0;
+}
+#about .about__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 0 0;
+}
+#about .about__btn {
+  height: 54px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+#house {
+  margin: 80px 0 0 0;
+}
+#house .house__title {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  margin: 10px 0 0 0;
+}
+#house .house__blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 40px 0;
+}
+#house .house__subtitle {
+  font-size: 19px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 330px;
+  margin: 10px 0;
+}
+#house .house__block h3 {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+#house .house__block {
+  margin: 20px 0;
+}
+#house .house__btn {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  width: 180px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

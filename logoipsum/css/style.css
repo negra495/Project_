@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+#header {
+  margin: 20px 0 0 0;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header__nav a {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.468947px;
+  color: #19191B;
+  margin: 0 60px 0 0;
+}
+#header .header__nav a:hover {
+  border-bottom: 2px solid red;
+}
+#header .header__btn {
+  width: 120px;
+  height: 40px;
+  color: aliceblue;
+  border: none;
+  background: #FF7143;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#header .header__btn:hover {
+  background: #000;
+  border: 3px solid red;
+}
+
+#hero .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .hero__title {
+  font-size: 60px;
+  line-height: 77px;
+  width: 400px;
+  letter-spacing: -2.50105px;
+  color: #19191B;
+}
+#hero .hero__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.625263px;
+  width: 300px;
+  color: #696871;
+  margin: 30px 0;
+}
+#hero .hero__btn {
+  width: 110px;
+  height: 35px;
+  background: #5454D4;
+  border-radius: 10px;
+  color: #fffff;
+  border: none;
+  margin: 0 50px 0 0;
+}
+#hero .hero__block {
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #19191B;
+  border-radius: 50%;
+}
+#hero .hero__block a {
+  position: relative;
+  margin-left: 17px;
+  top: 15px;
+  color: #000000;
+}
+#hero .hero__button {
+  display: flex;
+  align-items: center;
+}
+
+#logoipsum .logoipsum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#subscription {
+  margin: 70px 0 0 0;
+}
+#subscription .subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#subscription .subscription__title {
+  font-size: 50px;
+  letter-spacing: -1.56316px;
+  color: #19191B;
+}
+#subscription .subscription__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.625263px;
+  color: #696871;
+  width: 400px;
+  margin: 20px 0;
+}
+#subscription .subscription__btn {
+  border: none;
+  color: #5454D4;
+  background: none;
+}
+
+#metrics .metrics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#metrics .metrics__title {
+  font-size: 50px;
+  letter-spacing: -1.56316px;
+  color: #19191B;
+}
+#metrics .metrics__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.625263px;
+  color: #696871;
+  margin: 20px 0;
+}
+#metrics .metrics__btn {
+  border: none;
+  color: #5454D4;
+  background: none;
+}
+
+/*# sourceMappingURL=style.css.map */

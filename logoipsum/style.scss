@@ -1,0 +1,136 @@
+@import "mixin";
+@import "global";
+
+#header{
+  margin: 20px 0 0 0;
+  .header{
+    @include center ();
+    &__nav a{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.468947px;
+      color: #19191B;
+      margin: 0 60px 0 0;
+    }
+    &__nav a:hover{
+      border-bottom: 2px solid red;
+    }
+    &__btn{
+      width: 120px;
+      height: 40px;
+      color: aliceblue;
+      border: none;
+      background: #FF7143;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    &__btn:hover{
+      background: #000;
+      border: 3px solid red;
+    }
+  }
+}
+
+#hero{
+  .hero{
+    @include center();
+    &__title{
+      font-size: 60px;
+      line-height: 77px;
+      width: 400px;
+      letter-spacing: -2.50105px;
+      color: #19191B;
+    }
+    &__subtitle{
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -0.625263px;
+      width: 300px;
+      color: #696871;
+      margin: 30px 0;
+
+    }
+    &__btn{
+      width: 110px;
+      height: 35px;
+      background: #5454D4;
+      border-radius: 10px;
+      color: #fffff;
+      border: none;
+      margin: 0 50px 0 0;
+    }
+    &__block{
+      width: 50px;
+      height: 50px;
+      background: #FFFFFF;
+      border: 1px solid #19191B;
+      border-radius: 50%;
+    }
+    &__block a{
+      position: relative;
+      margin-left: 17px;
+      top: 15px;
+      color: #000000;
+    }
+    &__button{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+#logoipsum{
+  .logoipsum{
+    @include center();
+  }
+}
+
+#subscription{
+  margin: 70px 0 0 0;
+  .subscription{
+    @include center();
+    &__title{
+      font-size: 50px;
+      letter-spacing: -1.56316px;
+      color: #19191B;
+    }
+    &__subtitle{
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -0.625263px;
+      color: #696871;
+      width: 400px;
+      margin: 20px 0;
+    }
+    &__btn{
+      border: none;
+      color: #5454D4;
+      background: none;
+    }
+  }
+}
+
+
+#metrics{
+  .metrics{
+    @include center();
+    &__title{
+      font-size: 50px;
+      letter-spacing: -1.56316px;
+      color: #19191B;
+    }
+    &__subtitle{
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -0.625263px;
+      color: #696871;
+      margin: 20px 0;
+    }
+    &__btn{
+      border: none;
+      color: #5454D4;
+      background: none;
+    }
+  }
+}
