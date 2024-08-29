@@ -1,0 +1,48 @@
+.container{
+    padding: 20px;
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    flex-wrap: wrap;
+
+}
+body{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+.square {
+    width: 20px;
+    height: 20px;
+    background: #1d1d1d;
+    box-shadow: 0 0 3px #000000;
+    transition: 0.5s ease-in;
+    margin: 2px
+}
+.square:hover{
+    transition-duration: 0s;
+}
+.btn{
+    padding: 10px;
+    background: green;
+    color: white;
+
+}
+.round{
+    width: 20px;
+    height: 20px;
+    background: #1d1d1d;
+    box-shadow: 0 0 3px #000000;
+    transition: 0.5s ease-in;
+    border-radius: 50%;
+}
+.btn2{
+    padding: 10px;
+    background: #a10707;
+    color: white;
+}
