@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 3px;
+    background-color: darkgreen;
+}
+/*.gold{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    !*justify-content: space-between ;*!*/
+/*    justify-content: flex-end;*/
+/*    color: lightgoldenrodyellow;*/
+
+/*}*/
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.3rem;
+    /*background-color: var(--color-white-shade);*/
+    font-size: 25px;
+}
+
+.btn {
+    background-color: #296504;
+    color: white;
+    cursor: pointer;
+    transition: scale 0.20s ease-in,
+    opacity 0.20s ease-in,
+    filter 0.20s ease-in;
+
+    &:hover{
+    scale: 1.1;
+     }
+}
+.btns:has(.btn:hover) .btn:not(:hover){
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+}
+.container{
+    /*font-weight: 93px;*/
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0px;*/
+    font-size: 45px;
+    font-family: sedan sc;
+    /*margin-left: 75px;*/
+}
+.title{
+    padding:29px;
+}
+.text{
+    padding: 35px;
+    font-size: 30px;
+    font-family: sedan sc;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+.text-title{
+    margin-left: 45px;
+}
+.title-text{
+    margin-left: 33px;
+}
+
+
+
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    /*top: 30px;*/
+    /*left: 260px;*/
+    width: 46px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 9;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: red;
+}
+.menu__btn > span::before {
+    content: '';
+    /*top: 8px;*/
+}
+.menu__btn > span::after {
+    content: '';
+    /*top: 8px;*/
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    /*top: 0;*/
+    left: 1%;
+    width: 259px;
+    height: 52%;
+    /*margin: 0;*/
+    padding: 15px 80px;
+    list-style: none;
+    text-align: center;
+    background-color: #296504;
+    box-shadow: 3px 10px 10px rgb(30, 247, 255);
+}
+/* элементы меню */
+.menu__item {
+    display: grid;
+    padding: 7px 20px;
+    color: #9b980c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    /*left: 0;*/
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    transition-duration: .25s;
+}
+.menu__box {
+    transition-duration: .25s;
+}
+.menu__item {
+    transition-duration: .25s;
+}
+#menu__toggle {
+    opacity: 0;
+}

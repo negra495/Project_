@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+#header{
+    background: #00f7ff;
+    height: 60px;
+}
+.title{
+    color: #000;
+}
+.subtitle{
+    color: white;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+.teg{
+    margin-left: 600px;
+    margin-top: -30px;
+
+}

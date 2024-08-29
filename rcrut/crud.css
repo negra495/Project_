@@ -1,0 +1,27 @@
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+/*.btn{*/
+/*    background: red;*/
+/*    padding: 10px 10px;*/
+/*    color: white;*/
+/*}*/
+
+/*.btn2{*/
+/*    background: blue;*/
+/*    padding: 10px 10px;*/
+/*    color: white;*/
+/*    margin: 0 5px;*/
+/*}*/
+
+/*.gen{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/

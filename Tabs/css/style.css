@@ -1,0 +1,20 @@
+#js:checked~.html,
+#js:checked~.css{
+    display: none;
+}
+#html:checked~.js,
+#html:checked~.css{
+    display: none;
+}
+#css:checked~.html,
+#css:checked~.js{
+    display: none;
+}
+input{
+    display: none;
+}
+#all:checked~.html,
+#all:checked~.js,
+#all:checked~.css{
+    display: block;
+}

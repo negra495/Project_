@@ -1,0 +1,69 @@
+@media(max-width: 1200px){
+
+}
+@media(max-width: 1140px){
+
+}
+@media(max-width: 1024px) {
+    .hero-title {
+        font-weight: 700;
+        font-size: 33px;
+        color: #1E3240;
+    }
+
+    .award.title {
+        font-weight: 700;
+        font-size: 37px;
+        line-height: 46px;
+        color: #1E3240;
+    }
+
+    .award-subtitle {
+        font-size: 13px;
+        color: #BDBDBD;
+        margin: 20px 0;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 90%;
+        height: 95%;
+        object-fit: cover;
+    }
+
+    .swiper-block {
+        position: relative;
+        width: 220px;
+        height: 73px;
+        margin-left: 20px;
+        margin-top: -117px;
+        background: #FFFFFF;
+        box-shadow: 0 2px 18px rgb(0 0 0 / 4%);
+        border-radius: 5px;
+    }
+}
+
+@media(max-width: 992px){
+
+}
+@media(max-width: 768px){
+
+}
+@media(max-width: 576px){
+
+}
+@media(max-width: 451px){
+
+}
+@media(max-width: 400px){
+
+}
+@media(max-width: 376px){
+
+}
+@media(max-width: 320px){
+
+}
+
+
+

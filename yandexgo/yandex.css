@@ -1,0 +1,66 @@
+#wellcome{
+    background: #c70ded;
+    background: linear-gradient(180deg,rgba(199,13,237,.394) 1%,rgba(35,24,218,.274) 29%,rgba(164,220,240,.436) 72%,hsla(0,0%,100%,.475));
+    height: 100vh;
+    padding: 80px 0 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 120px 0;
+    position: relative;
+}
+.wellcome{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: normal;
+    align-items: normal;
+}
+.wellcome-left{
+    position: relative;
+    z-index: 2;
+}
+.ya{
+    width: 200px;
+}
+.wellcome-title{
+    font-family: YS Text, sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+}
+.wellcome.paragraph{
+    margin: 70px 0;
+}
+.paragraph{
+    font-family: YS Text, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+}
+.btn{
+    padding: 24px 48px;
+    background: rgb(255, 222, 64);
+    border-radius: 36px;
+    border: none;
+    font-size: 24px;
+    /*font-weight: 30px;*/
+    /*width: 55%;*/
+    /*cursor: pointer;*/
+}
+.wellcome_right{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: center;
+    right: 150px;
+    top: 0;
+    z-index: 1;
+}
+.wellcome_textimg{
+    animation: 20s infinite;
+    left: 32%;
+    position: absolute;
+    top: 71%;
+}
