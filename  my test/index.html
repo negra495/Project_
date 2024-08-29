@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #151515
+        }
+        .circle1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            border: 6px solid red;
+            animation: ani 10s linear infinite;
+        }
+        .circle2{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 20px solid #f9ce24;
+            animation: ani 15s linear infinite;
+        }
+        .text{
+            animation: ani 0s linear infinite;
+        }
+        @keyframes ani{
+            0%{
+                transform: rotate(600deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="circle1">
+        <div class="text">
+            <h1>HELLO</h1>
+        </div>
+    <div class="circle2"></div>
+        <div class="text">
+            <h1>HELLO</h1>
+        </div>
+  </div>
+</div>
+</body>
+</html>
