@@ -1,0 +1,271 @@
+.icon{
+    font-size: 110px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 305px;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 200px;
+}
+
+
+
+body
+{
+    /*padding: 0;*/
+    /*background: yellow;*/
+    /*font-family: "Droid Sans";*/
+}
+a{
+    position: absolute;
+    margin: 55px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-90%, -90%);
+    color: #262626;
+    padding: 60px;
+    letter-spacing: 100px;
+    /*text-transform: uppercase;*/
+    text-decoration: #0c002b;
+    /*box-shadow: 0 20px 50px rgba(0,0,0,.5);*/
+    /*overflow: hidden;*/
+}
+a:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    border-radius: 35px;
+
+    /*background: rgba(255,255,255,0.15);*/
+}
+a span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate1 2s linear infinite;
+    animation-delay: 1s;
+
+
+}
+@keyframes animate1
+{
+    0%
+    {
+    transform: translateX(-100%);
+
+    }
+    100%
+    {
+        transform: translateX(100%);
+
+    }
+}
+a span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 35px;
+    background: linear-gradient(to bottom, #02002b, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%);
+
+    }
+    100%
+    {
+        transform: translateY(100%);
+
+    }
+}
+a span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 35px;
+    background: linear-gradient(to bottom, #02002b, #1779ff);
+    animation: animate3 2s linear infinite;
+
+    animation-delay: 1s;
+
+}
+@keyframes animate3
+{
+    0%
+    {
+    transform: translateX(100%);
+
+    }
+    100%
+    {
+        transform: translateX(-100%);
+
+    }
+}
+a span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 35px;
+    background: linear-gradient(to bottom, #02002b, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%);
+
+    }
+    100%
+    {
+        transform: translateY(-100%);
+
+    }
+}
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #262626;
+}
+.container .search{
+    position: absolute;
+    margin: auto;
+    top: 500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.4);
+    transition: 1s all;
+}
+.container .search:hover{
+    cursor: pointer;
+}
+.container .search::before{
+    content: " ";
+    position: absolute;
+    margin: auto;
+    top: 22px;
+    left: 22px;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: 0.5s all;
+}
+.container .search::after{
+    content: " ";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid#fff;
+    transition: 0.5s all;
+}
+.container input{
+    position: absolute;
+    margin: auto;
+    top: 500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    height: 50px;
+    outline: yellow;
+    border: blueviolet;
+    background-color: green;
+    color: #fff;
+    text-shadow: 0 0 10px green;
+    padding: 0 150px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 yellow, 0 20px 25px 0 rgba(0,0,0,0.2);
+    opacity: 0;
+    z-index: 5;
+    letter-spacing: 0.1rem;
+    transition: 1s all;
+}
+.container input:hover{
+    cursor: pointer;
+}
+.container input:focus{
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+}
+.container input:focus ~ .search{
+    right: -250px;
+    background-color: #151515;
+    z-index: 6;
+}
+.container input:focus ~ .search::before{
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+.container input:focus ~ .search::after{
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0;
+    transform: rotate(-45deg);
+}
+.container input::placeholder{
+    color: #fff;
+}
